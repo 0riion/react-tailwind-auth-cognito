@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# Full React + Tailwind Authentication (AWS Cognito)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This comprehensive authentication system provides a robust foundation for managing user identities and authentication in your React applications. Feel free to reuse or learn from the provided code to streamline your development process.
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+Harness the power of AWS Cognito to seamlessly integrate user authentication into your React applications. This project encompasses a complete authentication system, covering user registration, sign-in, email verification, and access-controlled pages.
 
-### `npm start`
+![sign up](./docs/screenshots/sign-up.png)
+![sign in](./docs/screenshots/sign-in.png)
+![sign verify email](./docs/screenshots/verify-email.png)
+![Authenticated page](./docs/screenshots/home.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Requirements
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- AWS Cognito User Pool (created in the AWS Console)
+- Node.js `v18` or higher
+- Yarn
+- AWS Account
 
-### `npm test`
+## Running
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Clone the repository:
 
-### `npm run build`
+```bash
+git clone <url>
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Navigate to the project directory: cd react-tailwind-cognito
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+cd react-tailwind-cognito
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Install dependencies: yarn
 
-### `npm run eject`
+```bash
+yarn
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Start the development server: yarn start
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+yarn start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Tech Stack
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- AWS Amplify for streamlined integration with AWS Cognito
+- React for building user interfaces
+- React Router for managing application routes
+- Tailwind CSS for rapid and responsive styling
 
-## Learn More
+## Additional Notes
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to customize the code to suit your specific application needs.
+For detailed instructions and configuration guidance, refer to the project's documentation.
